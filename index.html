@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mohamed Abdelrazek" />
+    <meta
+      name="description"
+      content="A simple and user-friendly website to convert digital storage units like bits, bytes, KB, MB, and GB. Created by Mohamed Abdelrazek, AOU student."
+    />
+
+    <meta property="og:title" content="Digital Units Converter">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <!-- <meta property="og:image" content="https://example.com/preview.jpg"> -->
+    <title>Syler's Units Converter</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="imges/icone.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fontawesome-free-7.0.0-web/css/all.min.css" />
+  </head>
+
+  <body class="light-theme">
+    <header>
+      <div id="home" class="navContainer">
+        <nav>
+          <div class="Logo">
+            <img src="imges/logo2.png" alt="logo" />
+          </div>
+          <ul class="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#units-info">Digital Units</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#vision">Vision</a></li>
+            <li><a href="converter.html">Converter</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <span
+            ><button id="theme-toggle" aria-label="Toggle Theme">
+              <i class="fas fa-moon"></i></button
+          ></span>
+        </nav>
+      </div>
+
+      <div class="home">
+        <p>Hello I'm</p>
+        <h1>Mohamed Abdelrazek</h1>
+        <p>Junior Web <span id="typed-text"></span></p>
+        <a href="converter.html" class="try-converter-btn">Try My Converter</a>
+      </div>
+    </header>
+
+    <!-- Main -->
+
+    <main>
+      <!-- Units Info Section -->
+      <section id="units-info" class="units-info-section">
+        <h2 class="units-info-title">Digital Storage Units</h2>
+        <div class="units-cards-container">
+          <div class="unit-card">
+            <i class="fas fa-microchip unit-icon"></i>
+            <h3>Bit (b)</h3>
+            <p>The smallest unit of digital data, representing a single binary value (0 or 1).</p>
+          </div>
+          <div class="unit-card">
+            <i class="fas fa-database unit-icon"></i>
+            <h3>Byte (B)</h3>
+            <p>Consists of 8 bits. Commonly used to represent a single character of text.</p>
+          </div>
+          <div class="unit-card">
+            <i class="fas fa-sd-card unit-icon"></i>
+            <h3>Kilobyte (KB)</h3>
+            <p>Equals 1,024 bytes. Used to measure small files or text documents.</p>
+          </div>
+          <div class="unit-card">
+            <i class="fas fa-file-archive unit-icon"></i>
+            <h3>Megabyte (MB)</h3>
+            <p>Equals 1,024 KB. Used for images, audio files, and small programs.</p>
+          </div>
+          <div class="unit-card">
+            <i class="fas fa-hdd unit-icon"></i>
+            <h3>Gigabyte (GB)</h3>
+            <p>Equals 1,024 MB. Used for videos, software, and storage devices.</p>
+          </div>
+        </div>
+        <a href="converter.html" class="units-convert-btn">Start Converting Now</a>
+      </section>
+      <!-- about sec -->
+      <section id="about" class="about">
+        <div class="about-grid">
+          <div class="about-image">
+            <img src="imges/about.jpg" alt="About Image" />
+          </div>
+          <div class="about-text">
+            <h2><span>| </span> About Me,</h2>
+            <p>
+              My name is Mohamed Abdelrazek , a Computer Science student at AOU.
+              I enjoy building smart, responsive, and helpful web tools using
+              HTML, CSS, and JavaScript. This website is part of my TT284 TMA to
+              demonstrate converting between digital storage units.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vision sec -->
+
+      <section id="vision" class="vision-section">
+        <div class="vision-container">
+          <div class="card">
+            <h2>Vision</h2>
+            <p>
+              To create simple and accessible digital tools that help users
+              convert and understand data units, and to enhance my personal
+              growth as a web developer.
+            </p>
+          </div>
+          <div class="card">
+            <h2>Mission</h2>
+            <p>
+              To design a clean and responsive web application using HTML, CSS,
+              and JavaScript as part of my TT284 coursework, delivering
+              user-friendly features with a clear educational purpose.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cconverter -->
+
+      <!-- <section id="converter">
+        <iframe src="converter.html" frameborder="0"></iframe>
+      </section> -->
+
+      <!-- =CONTACT SEC = -->
+      <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or feedback, feel free to get in touch!</p>
+
+        <form
+          class="contact-form"
+          action="mailto:mohamedmidoh58@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="e.g., name "
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="e.g., name@example.com"
+              required
+            />
+          </div>
+
+          <div class="form-group full-width">
+            <label for="message">Your Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Type your message here..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-group full-width">
+            <button type="submit">Send Message</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- = FOOTER == -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Mohamed Abdelrazek. All Rights Reserved.</p>
+        <div class="social-icons">
+          <a
+            href="https://github.com/yourgithub"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/yourprofile"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:your@email.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

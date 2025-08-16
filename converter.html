@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta & Head from index.html -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Mohamed Abdelrazek" />
+  <meta name="description" content="A simple and user-friendly website to convert digital storage units like bits, bytes, KB, MB, and GB. Created by Mohamed Abdelrazek, AOU student." />
+  <title>Digital Storage Units Converter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="converter.css" />
+  <link rel="stylesheet" href="fontawesome-free-7.0.0-web/css/all.min.css" />
+</head>
+<body class="light-theme">
+
+  <!-- ===== Header & Nav ===== -->
+  <header>
+    <nav class="navContainer">
+      <!-- Left side: Logo + Title -->
+
+      <div class="logo-section">
+                      <i class="fas fa-hdd" alt="logo" class="logo"></i>
+
+        <h2>  Digital Storage Units Converter</h2>
+      </div>
+
+      <!-- Middle: Links -->
+      <div class="navlinkcont">
+      <ul class="navLinks">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#units-info">Digital Units</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#vision">Vision</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      </div>
+
+      <!-- Right: Theme toggle -->
+      <button id="theme-toggle" aria-label="Toggle Theme">
+        <i class="fas fa-moon"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== Main Content ===== -->
+  <main class="converter-page">
+    <form id="converter-form" aria-label="Digital Storage Unit Converter">
+      <label for="input-value">Enter value (From):</label>
+      <input type="number" id="input-value" name="input-value" placeholder="Enter value" aria-required="true" />
+
+      <div class="unit-selection">
+        <label for="from-unit" class="unit-label">From:</label>
+        <select id="from-unit" name="from-unit" aria-label="Convert from">
+          <option value="bit">Bit</option>
+          <option value="byte">Byte</option>
+          <option value="kb">KB</option>
+          <option value="mb">MB</option>
+          <option value="gb">GB</option>
+        </select>
+
+        <!-- Swap units button -->
+        <button type="button" id="swap-units" aria-label="Swap units">
+          <i class="fas fa-exchange-alt"></i>
+        </button>
+
+        <label for="to-unit" class="unit-label">To:</label>
+        <select id="to-unit" name="to-unit" aria-label="Convert to">
+          <option value="bit">Bit</option>
+          <option value="byte">Byte</option>
+          <option value="kb">KB</option>
+          <option value="mb">MB</option>
+          <option value="gb">GB</option>
+        </select>
+      </div>
+
+      <!-- Convert Button -->
+      <button type="button" id="convert-btn">Convert</button>
+    </form>
+
+    <!-- Result -->
+    <div class="converter-result">
+      <p id="result">Result will appear here</p>
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="footer-top">
+      <span class="footer-title">Digital Storage Converter</span>
+      <span class="footer-copy">© 2025 Mohamed Abdelrazek. All Rights Reserved.</span>
+    </div>
+    <div class="footer-icons">
+      <a href="https://github.com/yourusername" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/yourusername" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:your-email@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <!-- ===== JS ===== -->
+
+    <script src="./js/main.js" ></script>
+</body>
+</html>
